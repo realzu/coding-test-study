@@ -1,5 +1,5 @@
 s = input()
-s = list(map(int, s)) #★
+s = list(map(int, s))
 
 ''' ★문자열 자르기
 String[start:end:step] : 인덱스 start번부터 end-1번까지 step대로
@@ -14,7 +14,8 @@ for i in range(len(s)):
         h[i] *= s[i+1]
 
 print(h[i-1])
-# 오답 ^ㅠ^
+# 오답 
+# 문제에 필요한 변수는 첫,두번째값(o) --일일이 리스트필요없음. 매번 바뀌는 변수값 '2개'만 비교하면됌
 
 # 강의 답안
 '''hint
