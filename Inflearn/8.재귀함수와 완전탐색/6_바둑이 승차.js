@@ -1,18 +1,20 @@
-// @
+// ★
 function solution(c, arr){
     let answer=Number.MIN_SAFE_INTEGER;
     let n=arr.length;
-    function DFS(L, sum){
-        if(sum>c) return;
-        if(L===n){
-            answer=Math.max(answer, sum);
+
+    function DFS(L, sum){ // L은 인덱스
+        if (sum > c) return;
+        if (L === n){ // 인덱스 끝
+            answer = Math.max(answer, sum); // 결과 도출
         }
-        else{
+        else{ // 값 늘려감
             DFS(L+1, sum+arr[L]);
             DFS(L+1, sum);
-        }                  
+        }
     }
-    DFS(0, 0);
+
+    DFS(0, 0); // 초깃값
     return answer;
 }
 
