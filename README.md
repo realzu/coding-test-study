@@ -9,4 +9,4 @@
 
 #### 💚 [BackJoon](https://www.acmicpc.net/step)
 
-#### 💙 [ThisCodingTest](https://github.com/ndb796/python-for-coding-test)
+#### 💙 [ThisIsCodingTest](https://github.com/ndb796/python-for-coding-test)
